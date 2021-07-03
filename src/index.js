@@ -1,13 +1,10 @@
-import express from 'express'
-import mongoose from 'mongoose'
-import Post from './Post.js'
-import router from "./router.js";
-
+const express = require('express')
+const mongoose = require('mongoose')
 const PORT = 3000;
 const app = express()
 
 app.use(express.json())
-app.use('/api', router)
+// app.use('/api', route)
 
 const DB_URI = "mongodb+srv://Iskander:2u3nMdpWXxhPzD1Z@cluster0.bby5x.mongodb.net/simple-rest-express?retryWrites=true&w=majority";
 

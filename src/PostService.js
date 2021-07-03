@@ -1,6 +1,6 @@
-import Post from "./Post.js";
+const Post = require('Post')
 
-class PostService {
+export default class PostService {
     async create(post) {
         return await Post.create(post);
     }
@@ -33,4 +33,3 @@ class PostService {
     }
 }
 
-export default new PostService();
